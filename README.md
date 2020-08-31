@@ -2,10 +2,11 @@ Terminex
 ========
 
 This is a version of [IBM Plex Mono](https://github.com/IBM/plex) made more
-usable in terminals and code editors with two additions:
+usable in terminals and code editors with three additions:
 
-* slightly darker weight (based on IBM Plex Mono Text)
-* [Addition of box drawing characters](https://github.com/adobe-type-tools/box-drawing)
+* Slightly darker weight (based on IBM Plex Mono Text).
+* Uses slashed zero instead of dotted zero.
+* Addition of box drawing characters [from Adobe](https://github.com/adobe-type-tools/box-drawing)
   for use in terminals.
 
 Aside from these changes, there is no difference in the actual glyphs between
@@ -25,5 +26,25 @@ Install the TTF files in this repo, and reference in your application as
 Source
 ------
 
-TTF files were taken direclty from [IBM Plex repo](https://github.com/IBM/plex)
-and modified using FontForge.
+1. Clone https://github.com/vsalvino/box-drawing and use it to generate UFO of
+   box drawing characters using the `-fontforge` flag.
+
+2. Download latest IBM Plex TTF files from: https://github.com/IBM/plex
+   * IBM Plex Mono Text
+   * IBM Plex Mono Text Italic
+   * IBM Plex Mono Bold
+   * IBM Plex MOno Bold Italic
+
+3. Open each source TTF file in [FontForge](https://fontforge.org/en-US/).
+
+4. To apply box drawing characters:
+   * Select Element > Merge font...
+   * Select the UFO folder.
+
+5. To swap dotted zero for slashed zero:
+   * Select View > Go to...
+   * Go to "zero.alt1". Copy/paste into "zero".
+
+6. Rename meta info:
+   * Select Element > Font info...
+   * Adjust family, name, weights so that all belong to family "Terminex".
