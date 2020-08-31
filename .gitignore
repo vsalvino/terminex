@@ -1,1 +1,7 @@
 .vscode/
+
+# Cloned box-drawing repo.
+box-drawing/
+
+# Box drawing output.
+*_boxes.ufo/

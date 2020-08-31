@@ -26,8 +26,8 @@ Install the TTF files in this repo, and reference in your application as
 Source
 ------
 
-1. Clone https://github.com/vsalvino/box-drawing and use it to generate UFO of
-   box drawing characters using the `-fontforge` flag.
+1. Clone https://github.com/adobe-type-tools/box-drawing and run it from the
+   command line to generate UFO of box drawing characters.
 
 2. Download latest IBM Plex TTF files from: https://github.com/IBM/plex
    * IBM Plex Mono Text
