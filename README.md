@@ -6,6 +6,7 @@ usable in terminals and code editors with three additions:
 
 * Slightly darker weight (based on IBM Plex Mono Text).
 * Uses slashed zero instead of dotted zero.
+* Dash is slightly longer.
 * Addition of box drawing characters [from Adobe](https://github.com/adobe-type-tools/box-drawing)
   for use in terminals.
 
@@ -45,6 +46,10 @@ Source
    * Select View > Go to...
    * Go to "zero.alt1". Copy/paste into "zero".
 
-6. Rename meta info:
+6. To swap hyphen with en-dash:
+   * Select View > Go to...
+   * Go to "endash". Copy/paste into "hyphen".
+
+7. Rename meta info:
    * Select Element > Font info...
    * Adjust family, name, weights so that all belong to family "Terminex".
